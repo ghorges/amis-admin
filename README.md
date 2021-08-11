@@ -1,10 +1,11 @@
-# amis admin 模板
-
 fork 地址：[amis-admin](https://github.com/aisuda/amis-admin)
 
 由于自己改动了一部分，所以没有直接 fork，所以对原作者表示抱歉。
 
 服务端需要解决 cors，然后直接收 post 请求并处理就好。
+
+
+# amis admin 模板
 
 基于 [amis](https://github.com/baidu/amis) 渲染器，快速搭建自己的管理系统。
 
