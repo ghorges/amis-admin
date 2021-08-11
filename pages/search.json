@@ -1,0 +1,114 @@
+{
+    "type": "page",
+    "body": 
+    [
+      {
+        "type": "form",
+        "mode": "inline",
+        "api": "http://127.0.0.1:80/search",
+        "body": 
+        [
+          {
+            "label": "地址",
+            "type": "input-text",
+            "name": "address",
+            "value": "10.103.146.44"
+          },
+          {
+            "type": "input-text",
+            "label": "端口",
+            "name": "port",
+            "value": "8080"
+          },
+          {
+            "type": "input-text",
+            "label": "keyword",
+            "name": "keyword",
+            "value": "shihlin"
+          },
+          {
+            "type": "input-text",
+            "label": "longitude",
+            "name": "longitude",
+            "value": "106.78259854024577"
+          },
+          {
+            "type": "input-text",
+            "label": "latitude",
+            "name": "latitude",
+            "value": "-6.1999380148599"
+          },
+          {
+            "type": "input-text",
+            "label": "page_num",
+            "name": "page_num",
+            "value": "1"
+          },
+          {
+            "type": "input-text",
+            "label": "page_size",
+            "name": "page_size",
+            "value": "20"
+          },
+          {
+            "type": "input-text",
+            "label": "time",
+            "name": "time",
+            "value": "1627878600000"
+          },
+          {
+            "type": "table",
+            "title": "展示表格",
+            "source": "$id",
+            "columns": [{
+                "label": "store id",
+                "name": "store_id",
+                "type": "text"
+              },
+              {
+                "type": "text",
+                "name": "store_name",
+                "copyable": true,
+                "label": "门店名"
+              },
+              {
+                "type": "text",
+                "name": "distance",
+                "label": "距离"
+              },
+              {
+                "type": "text",
+                "name": "open_status",
+                "label": "店铺状态"
+              },
+              {
+                "type": "text",
+                "name": "store_intention",
+                "label": "店铺意向"
+              },
+              {
+                "label": "菜品 id          ｜            菜品名",
+                "type": "table",
+                "source": "$dish_ids",
+                "footable": {
+                  "expand": "first"
+                },
+                "columns": [{
+                  "name": "dish_ids",
+                  "isHead": true,
+                  "type": "text"
+                },
+                {
+                  "type": "text",
+                  "name": "dish_name",
+                  "copyable": true,
+                  "isHead": true
+                }
+              ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

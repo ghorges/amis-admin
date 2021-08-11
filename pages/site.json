@@ -1,0 +1,33 @@
+{
+  "status": 0,
+  "msg": "",
+  "data": {
+    "pages": [
+      {
+        "label": "Home",
+        "url": "/",
+        "redirect": "/food-algo-search"
+      },
+      {
+        "label": "search",
+        "children": [
+          {
+            "label": "food algo search",
+            "url": "/food-algo-search",
+            "schemaApi": "get:/pages/search.json"
+          }
+        ]
+      },
+      {
+        "label": "search",
+        "children": [
+          {
+            "label": "food algo search",
+            "url": "/index",
+            "schemaApi": "get:/pages/console.json"
+          }
+        ]
+      }
+    ]
+  }
+}
